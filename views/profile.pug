@@ -1,0 +1,17 @@
+- var displayName = user.displayName
+- var givenName = user.name.givenName
+- var familyName = user.name.familyName
+- var email = user.emails[0].value
+- var id = user.id
+- var photoSrc = user.photos[1].value
+
+html
+    include includes/head.pug
+    body
+        h1 LinkedIn profile:
+        p displayName: #{displayName}
+        p givenName: #{givenName}
+        p familyName: #{familyName}
+        p email: #{email}
+        p id: #{id}
+        img(src=photoSrc)
